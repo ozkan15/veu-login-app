@@ -5,10 +5,10 @@
     <v-toolbar-title>DEMO</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn v-if="!loggedIn" flat><router-link  class="links" to="/login">LOGIN</router-link></v-btn>
-      <v-btn v-if="!loggedIn" flat><router-link class="links" to="/register">REGISTER</router-link></v-btn>
+      <v-btn v-if="!loggedIn" flat to="/login">LOGIN</v-btn>
+      <v-btn v-if="!loggedIn" flat to="/register">REGISTER</v-btn>
       <v-btn v-if="loggedIn" flat @click="logout">LOGOUT</v-btn>
-      <v-btn v-if="loggedIn" flat><router-link class="links" to="/userlist">USERLIST</router-link></v-btn>
+      <v-btn v-if="loggedIn" flat to="/userlist">USERLIST</v-btn>
     </v-toolbar-items>
     </v-toolbar>
 
