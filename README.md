@@ -17,4 +17,4 @@ cd users-api
 
 npm install
 
-node serve.js
+node server.js
