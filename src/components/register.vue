@@ -58,8 +58,7 @@ export default {
       ],
       password: '',
       passwordRules: [
-        v => !!v || 'password is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters'
+        v => !!v || 'password is required'
       ],
       alert_success: false,
       alert_error: false,
